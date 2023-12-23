@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [];
+import { SliderComponent } from "./slider/slider.component";
+import { BoxesComponent } from './boxes/boxes.component';
+const routes: Routes = [
+  { path: 'slider', component: SliderComponent, pathMatch: 'full' },
+  { path: 'boxes', component: BoxesComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

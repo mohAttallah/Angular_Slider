@@ -1,0 +1,44 @@
+:host {
+    max-height: 120px;
+    border: 1px solid #ddd;
+    display: flex;
+    // flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+
+    button {
+        padding: 5px 10px;
+        margin: 5px;
+        border: 1px solid #ddd;
+        background-color: #f8f8f8;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #e8e8e8;
+        }
+    }
+
+    /* slider.component.scss */
+    .scroll-container {
+        max-height: 120px;
+        border: 1px solid #ddd;
+        display: flex;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+
+        div {
+            margin-left: 10px;
+            width: 220px;
+            height: 110px;
+            line-height: 120px;
+            text-align: center;
+            background-color: #ddd;
+        }
+    }
+}
